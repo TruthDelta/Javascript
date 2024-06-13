@@ -1,0 +1,36 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+margin: 2rem auto;
+border: 5px solid black;
+max-width: 15rem;
+padding: 3rem;
+border-radius: 1rem;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+button {
+    background-color: blue;
+    margin-top: 1rem;
+    color: white;
+    padding: 1rem 1.2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+#addTask:hover {
+    background-color: rgba(52, 52, 146, 0.767);
+    transition: 0.8s;
+}
+
+#addTask:focus {
+    outline: none;
+}
