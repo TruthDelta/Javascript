@@ -10,17 +10,17 @@ function addTask() {
         li.textContent = input.value;
         //Traduzindo esta linha, o texto de lista (li) será criado e deverá ser igual ao valor que será digitado dentro do campo "input"
 
-        const removerBotao = document.createElement("button");
+        const removeBotao = document.createElement("button");
         //Aqui estamos criando um Botão (button) para remover esses itens de (li);
 
-        removerBotao.textContent = "Remover";
+        removeBotao.textContent = "Remover";
 
-        removerBotao.onclick = function () { //Criamos uma função que ao clicar neste botão ele irá executar uma função.
-            ul.removerChild(li); //A função é pegar o elemento filho (child) da UL, que no caso é a "li" e remove-la.
+        removeBotao.onclick = function () { //Criamos uma função que ao clicar neste botão ele irá executar uma função.
+            ul.removeChild(li); //A função é pegar o elemento filho (child) da UL, que no caso é a "li" e remove-la.
         };
 
         ul.appendChild(li); //Estamos adicionando um filho para nossa UL.
-        li.appendChild(removerBotao); //Aqui chamamos nossa const "li" e estamos adicionando a ela um filho(appendChild)
+        li.appendChild(removeBotao); //Aqui chamamos nossa const "li" e estamos adicionando a ela um filho(appendChild)
 
         input.value = ""; //Usado para limpar o campo Input, depois de adicionado o item em questão.
 
